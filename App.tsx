@@ -134,7 +134,7 @@ const App: React.FC = () => {
             </div>
 
             <div id="approach">
-              <About />
+              <About onNavigate={handleNavClick} />
             </div>
 
             <div id="services">

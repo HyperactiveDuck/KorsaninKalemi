@@ -96,20 +96,21 @@ const Services: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {services.videos?.map((video) => (
-                <a key={video.id} href={video.link} className="group block space-y-4">
-                  <div className="relative aspect-video overflow-hidden border border-gray-800 group-hover:border-crimson transition-colors">
-                    <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
-                      <div className="w-12 h-12 bg-crimson/90 rounded-full flex items-center justify-center pl-1 group-hover:scale-110 transition-transform text-white">
-                        <Play size={20} fill="currentColor" />
-                      </div>
-                    </div>
+              {services.videos?.map((video: any) => (
+                <div key={video.id} className="group block space-y-4">
+                  <div className="relative aspect-video overflow-hidden border border-gray-800 group-hover:border-crimson transition-colors bg-black">
+                    <iframe
+                      className="w-full h-full"
+                      src={`https://www.youtube.com/embed/${video.videoId}`}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
                   <h4 className="font-serif text-lg text-gray-300 group-hover:text-white transition-colors leading-tight">
                     {video.title}
                   </h4>
-                </a>
+                </div>
               ))}
             </div>
           </div>

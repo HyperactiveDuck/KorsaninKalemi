@@ -13,17 +13,46 @@ export const CONTENT = {
     cta: "Son Eseri Oku"
   },
   about: {
-    images: {
-      image1: "[PLACEHOLDER_BOOK_COVER_1]",
-      image2: "[PLACEHOLDER_BOOK_COVER_2]",
-      image3: "[PLACEHOLDER_BOOK_COVER_3]"
-    },
+    books: [
+      {
+        id: 1,
+        image: "[PLACEHOLDER_BOOK_COVER_1]",
+        title: "Gece Yarısı Fısıltıları",
+        description: "Şehrin karanlık sokaklarında kaybolan ruhların birbirine dolanan hikayeleri.",
+        purchaseLinks: [
+          { name: "D&R", url: "https://www.dr.com.tr" },
+          { name: "Kitapyurdu", url: "https://www.kitapyurdu.com" },
+          { name: "Amazon", url: "https://www.amazon.com.tr" }
+        ],
+        readLink: "#"
+      },
+      {
+        id: 2,
+        image: "[PLACEHOLDER_BOOK_COVER_2]",
+        title: "Camdan Kuleler",
+        description: "Modern dünyanın kırılganlığı ve insan ilişkilerinin şeffaf ama keskin doğası.",
+        purchaseLinks: [
+          { name: "D&R", url: "https://www.dr.com.tr" },
+          { name: "BKM Kitap", url: "https://www.bkmkitap.com" },
+          { name: "Idefix", url: "https://www.idefix.com" }
+        ],
+        readLink: "#"
+      },
+      {
+        id: 3,
+        image: "https://placehold.co/600x900/000000/FFFFFF/png?text=?",
+        title: "Yakında...",
+        description: "Çok Yakında sizlerle...",
+        purchaseLinks: [],
+        readLink: "#"
+      }
+    ],
     headline: {
       line1: "HAİNİN MÜHRÜ",
       line2: "SERİSİ YAYINDA"
     },
     description: "Hainin Mührü serisi şimdi yayında! Okumak için hemen tıkla!",
-    link: "https://www.dokuz.com/hainin-muhru" // Assuming a link, or just use #
+    link: "#"
   },
   philosophy: {
     eyebrow: "Yazar Hakkında",
