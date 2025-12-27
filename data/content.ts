@@ -9,30 +9,29 @@ export const CONTENT = {
       line3: "ÖVGÜ DEVECİ SAFİ İLE"
     },
     subtext: "Mürekkep ve hayal gücüyle insan duygularının derinliklerini keşfetmek. Kalbin görülmeyen köşelerine bir yolculuk.",
+    authorSubtitle: "Bu hikâye bittiği gibi kumlara yazılacak ve derin denizin tek bir hırçın dalgasıyla silinip gidecek. Yine de devam etmek isterseniz, ben kimim ki size engel olacağım?",
     cta: "Son Eseri Oku"
   },
   about: {
     images: {
-      primary: "https://picsum.photos/seed/womanboss/800/1200",
-      secondary: "https://picsum.photos/seed/office1/600/400"
+      image1: "[PLACEHOLDER_BOOK_COVER_1]",
+      image2: "[PLACEHOLDER_BOOK_COVER_2]",
+      image3: "[PLACEHOLDER_BOOK_COVER_3]"
     },
     headline: {
-      line1: "KELİMELERİN",
-      line2: "ARDINDAKİ SES"
+      line1: "HAİNİN MÜHRÜ",
+      line2: "SERİSİ YAYINDA"
     },
-    body: [
-      "Yazmak sadece kağıda kelimeler dökmek değildir; varoluşun geçici anlarını yakalamaktır. Algıyı zorlayan ve yaşamın karmaşıklığını kucaklayan anlatılar örüyorum.",
-      "Hikayelerim yüzeysel olanı soyup atar, geriye sadece insan deneyimini yönlendiren ham, yüksek etkili duygular kalır. Hikayeleri sadece okumayız; mürekkebin içinde yaşarız."
-    ],
-    signature: "Övgü Deveci Safi"
+    description: "Hainin Mührü serisi şimdi yayında! Okumak için hemen tıkla!",
+    link: "https://www.dokuz.com/hainin-muhru" // Assuming a link, or just use #
   },
   philosophy: {
-    eyebrow: "Perspektif",
+    eyebrow: "Yazar Hakkında",
     headline: {
-      top: "Kelimeler,",
-      bottom: "RUHUN YANKISIDIR"
+      top: "BEN",
+      bottom: "KİMİM?"
     },
-    description: "Her hikaye, genellikle görmezden geldiğimiz gerçekleri yansıtan bir aynadır. Kurgu ve düzyazı aracılığıyla, gerçekliğin anlaşılmayı bekleyen en saf hallerini buluruz.",
+    description: "1995 yılında Ankara’da doğdum. Hacettepe Üniversitesi Güzel Sanatlar Fakültesi Grafik Tasarım Bölümü’nden mezun oldum. Çocukluğumdan beri hayalini kurduğum yazarlık yolculuğuna, kurmaca dünyalar ve güçlü karakterler yaratarak devam ediyorum. Hainin Mührü isimli serimin ilk iki kitabı, Mayıs 2025’te Dokuz Yayınları tarafından yayımlandı. Şu anda serinin üçüncü kitabı üzerinde çalışıyorum.",
     cta: "İletişime Geçin"
   },
   services: {
@@ -41,15 +40,29 @@ export const CONTENT = {
       smallOverlap: "https://picsum.photos/seed/hands/600/800"
     },
     headline: {
-      line1: "OKUNMAYI",
-      line2: "BEKLEYEN",
-      line3: "HİKAYELER"
+      line1: "BENİ",
+      line2: "TAKİP EDİN",
+      line3: "SOSYAL MEDYA"
     },
-    items: [
-      { title: "Edebi Kurgu", desc: "İnsanlık durumunu ve toplumu keşfetmek." },
-      { title: "Kısa Öyküler", desc: "Geniş hayatlara kısa, güçlü bakışlar." },
-      { title: "Denemeler & Düşünceler", desc: "Modern varoluş ve felsefe üzerine yansımalar." },
-      { title: "Yakında Çıkacak Roman", desc: "Çok yakında yeni bir bölüm açılıyor." },
+    // You can change the placeholder images for the videos below.
+    // thumbnail: URL of the video thumbnail
+    // link: URL of the YouTube video
+    videos: [
+      { id: 1, thumbnail: "https://picsum.photos/seed/video1/600/338", title: "Yazarlık Yolculuğum: Nasıl Başladım?", link: "#" },
+      { id: 2, thumbnail: "https://picsum.photos/seed/video2/600/338", title: "Karakter Yaratma Süreci", link: "#" },
+      { id: 3, thumbnail: "https://picsum.photos/seed/video3/600/338", title: "Hainin Mührü: Soru & Cevap", link: "#" }
+    ],
+    socials: [
+      { platform: "YouTube", url: "https://www.youtube.com/@ovgudeveci", icon: "Youtube" },
+      { platform: "Instagram", url: "https://www.instagram.com/ovgudeveci/?hl=tr", icon: "Instagram" }
+    ]
+  },
+  signing: {
+    headline: "İMZA GÜNLERİ",
+    events: [
+      { id: 1, city: "İstanbul", date: "15 Ekim 2025", venue: "Tüyap Kitap Fuarı", location: "Salon 2, Stand 2104" },
+      { id: 2, city: "Ankara", date: "22 Ekim 2025", venue: "ATO Congresium", location: "Büyük Salon" },
+      { id: 3, city: "İzmir", date: "5 Kasım 2025", venue: "Fuar İzmir", location: "C Holü" }
     ]
   },
   library: [
@@ -66,24 +79,24 @@ export const CONTENT = {
           title: "Bölüm I: Karanlık Başlangıç",
           subtitle: "Gecenin ilk saatleri",
           comments: [
-             { id: "cc1", user: "Okur123", text: "Bu bölüm girişi çok atmosferik.", date: "2 gün önce" },
-             { id: "cc2", user: "KitapKurdu", text: "Betimlemeler harika.", date: "1 hafta önce" }
+            { id: "cc1", user: "Okur123", text: "Bu bölüm girişi çok atmosferik.", date: "2 gün önce" },
+            { id: "cc2", user: "KitapKurdu", text: "Betimlemeler harika.", date: "1 hafta önce" }
           ],
           content: [
-            { 
-                id: "p1_1", 
-                text: "Gece, şehrin üzerine ağır bir yorgan gibi çökmüştü. Sokak lambaları, kaldırımlarda titreşen gölgeler yaratıyor, sanki geçmişin hayaletleri dans ediyordu. Leyla, paltosunun yakasını kaldırarak rüzgara karşı yürüdü. Aklında tek bir soru vardı: Geri dönmek mümkün müydü?",
-                comments: [
-                    { id: "c1", user: "Melis", text: "Bu metaforu çok sevdim, 'ağır bir yorgan' hissi çok tanıdık.", date: "1 saat önce" },
-                    { id: "c2", user: "Caner", text: "Leyla'nın çaresizliği şimdiden hissediliyor.", date: "3 saat önce" }
-                ]
+            {
+              id: "p1_1",
+              text: "Gece, şehrin üzerine ağır bir yorgan gibi çökmüştü. Sokak lambaları, kaldırımlarda titreşen gölgeler yaratıyor, sanki geçmişin hayaletleri dans ediyordu. Leyla, paltosunun yakasını kaldırarak rüzgara karşı yürüdü. Aklında tek bir soru vardı: Geri dönmek mümkün müydü?",
+              comments: [
+                { id: "c1", user: "Melis", text: "Bu metaforu çok sevdim, 'ağır bir yorgan' hissi çok tanıdık.", date: "1 saat önce" },
+                { id: "c2", user: "Caner", text: "Leyla'nın çaresizliği şimdiden hissediliyor.", date: "3 saat önce" }
+              ]
             },
-            { 
-                id: "p1_2", 
-                text: "Kaldırımlar ıslaktı ve her adımında yankılanan topuk sesleri, boş sokakta bir tehdit gibi çınlıyordu. Bir zamanlar tanıdık olan bu mahalle, şimdi ona yabancı bir labirent gibi geliyordu. Her köşebaşı, unutmak istediği bir anıyı saklıyordu.",
-                comments: [
-                     { id: "c3", user: "Elif", text: "Mekan tasviri çok canlı.", date: "1 gün önce" }
-                ]
+            {
+              id: "p1_2",
+              text: "Kaldırımlar ıslaktı ve her adımında yankılanan topuk sesleri, boş sokakta bir tehdit gibi çınlıyordu. Bir zamanlar tanıdık olan bu mahalle, şimdi ona yabancı bir labirent gibi geliyordu. Her köşebaşı, unutmak istediği bir anıyı saklıyordu.",
+              comments: [
+                { id: "c3", user: "Elif", text: "Mekan tasviri çok canlı.", date: "1 gün önce" }
+              ]
             },
             { id: "p1_3", text: "Birden durdu. Uzaktan gelen bir melodi, rüzgarın uğultusuna karıştı. Bu melodi, çocukluğunun en masum günlerinden, annesinin mırıldandığı o ninniden başkası değildi. Ama burada, bu saatte, bu karanlıkta kim onu hatırlıyor olabilirdi?" }
           ]
@@ -98,7 +111,7 @@ export const CONTENT = {
             { id: "p2_3", text: "Yaşlı adam tezgahın arkasından başını kaldırdı. Gözlerinde, binlerce hikayenin ağırlığı vardı. Gözlüklerini burnunun ucuna indirdi ve derin bir iç çekti. 'Seni bekliyordum,' dedi fısıltıyla. Leyla ürperdi. Kaderin ağları, görünmez ipliklerle örülmeye başlamıştı bile." }
           ]
         },
-         {
+        {
           id: "c3",
           title: "Bölüm III: Sırların Ağırlığı",
           subtitle: "Gerçekler ortaya çıkıyor",
@@ -124,7 +137,7 @@ export const CONTENT = {
           content: [
             { id: "p1_1", text: "Plazalar, gökyüzüne meydan okuyan camdan kuleler gibi yükseliyordu. İçlerinde, zamanla yarışan, duygularını toplantı odalarında unutan insanlar yaşıyordu. Kerem, 42. kattaki ofisinden aşağıya, karınca gibi görünen arabalara baktı." },
             { id: "p1_2", text: "Aşağıdaki kaos ona uzaktı, ama içindeki kaos her geçen saniye büyüyordu. Sessizlik, bu yükseklikte en gürültülü şeydi. Camın arkasındaki dünya kusursuz görünüyordu; lekesiz, düzenli ve soğuk." },
-             { id: "p1_3", text: "Telefonu titredi. Bir bildirim daha. Bir talep daha. Bir beklenti daha. Modern insanın prangaları görünmezdi, ama ağırlıkları demirden daha fazlaydı." }
+            { id: "p1_3", text: "Telefonu titredi. Bir bildirim daha. Bir talep daha. Bir beklenti daha. Modern insanın prangaları görünmezdi, ama ağırlıkları demirden daha fazlaydı." }
           ]
         },
         {

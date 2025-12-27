@@ -6,15 +6,15 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative w-full h-screen bg-obsidian text-softpearl overflow-hidden">
-      
+
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
-        <img 
-           src={hero.image} 
-           alt="Author Portrait" 
-           className="object-cover w-full h-full grayscale"
-         />
+        <img
+          src={hero.image}
+          alt="Author Portrait"
+          className="object-cover w-full h-full grayscale"
+        />
       </div>
 
       {/* Author Name - Bottom Right */}
@@ -22,6 +22,11 @@ const Hero: React.FC = () => {
         <h1 className="text-4xl md:text-6xl font-serif italic text-white tracking-wide text-right">
           Övgü Deveci Safi
         </h1>
+        {hero.authorSubtitle && (
+          <p className="text-sm md:text-base text-gray-300 mt-2 max-w-md text-right ml-auto italic opacity-80">
+            {hero.authorSubtitle}
+          </p>
+        )}
       </div>
 
     </section>
